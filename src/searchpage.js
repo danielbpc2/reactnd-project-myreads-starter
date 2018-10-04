@@ -13,11 +13,8 @@ class SearchPage extends React.Component {
     this.setState({
       query: userInput
     })
-    // Doesn't call the API if the search bar is a empty string or whitespace
-    if (userInput.trim() !== '' && userInput !== null) {
       BooksAPI.search(userInput)
       .then((data) => Array.isArray(data) ? this.setState({booksFound: [...data]}) : this.setState({booksFound: []}) )
-    }
   }
 
   render() {
