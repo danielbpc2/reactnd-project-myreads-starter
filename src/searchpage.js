@@ -13,8 +13,12 @@ class SearchPage extends React.Component {
     this.setState({
       query: userInput
     })
+    if (userInput == null || userInput === '') {
+      this.setState({booksFound: []})
+    } else {
       BooksAPI.search(userInput)
-      .then((data) => Array.isArray(data) ? this.setState({booksFound: [...data]}) : this.setState({booksFound: []}) )
+        .then((data) => Array.isArray(data) ? this.setState({booksFound: [...data]}) : this.setState({booksFound: []}) )
+    }
   }
 
   render() {

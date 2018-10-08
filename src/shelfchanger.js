@@ -2,12 +2,34 @@ import React from 'react';
 import * as BooksAPI from './BooksAPI'
 
 class ShelfChanger extends React.Component {
+
   state = {
     shelf: ''
   }
 
+  mounted = false;
+
+  componentWillMount() {
+    this.mounted = true;
+  }
+
   componentDidMount() {
-    BooksAPI.get(this.props.book['id']).then((data) => this.setState({ shelf: data['shelf'] } ) )
+    this.loadData();
+  }
+
+  componentWillUnmount() {
+    this.mounted = false
+  }
+
+  loadData = () => {
+    BooksAPI.get(this.props.book['id'])
+    .then((data) => {
+      if ( this.mounted ) {
+        this.setState({
+          shelf: data['shelf']
+        });
+      }
+    });
   }
 
   render(){
