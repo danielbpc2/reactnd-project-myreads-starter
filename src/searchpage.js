@@ -2,6 +2,7 @@ import React from 'react'
 import SearchBar from './searchbar.js'
 import SearchResults from './searchresults.js'
 import * as BooksAPI from './BooksAPI'
+import PropTypes from 'prop-types';
 
 class SearchPage extends React.Component {
   state = {
@@ -32,5 +33,9 @@ class SearchPage extends React.Component {
     )
   }
 }
+
+SearchPage.propTypes = {
+  handleSelection: PropTypes.func.isRequired
+};
 
   export default SearchPage

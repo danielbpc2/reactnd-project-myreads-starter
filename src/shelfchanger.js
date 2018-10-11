@@ -1,5 +1,6 @@
 import React from 'react';
 import * as BooksAPI from './BooksAPI'
+import PropTypes from 'prop-types';
 
 class ShelfChanger extends React.Component {
 
@@ -46,5 +47,10 @@ class ShelfChanger extends React.Component {
     )
   }
 }
+
+ShelfChanger.propTypes = {
+  book: PropTypes.object.isRequired,
+  handleSelection: PropTypes.func.isRequired
+};
 
 export default ShelfChanger;

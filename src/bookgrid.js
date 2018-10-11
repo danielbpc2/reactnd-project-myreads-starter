@@ -1,5 +1,6 @@
 import React from 'react'
 import Book from './book.js'
+import PropTypes from 'prop-types';
 
 const bookGrid = (props) => (
   <ol className="books-grid">
@@ -10,5 +11,10 @@ const bookGrid = (props) => (
     }
   </ol>
 )
+
+bookGrid.propTypes = {
+  books: PropTypes.array.isRequired,
+  handleSelection: PropTypes.func.isRequired
+};
 
 export default bookGrid

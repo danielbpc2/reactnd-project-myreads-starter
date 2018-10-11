@@ -34,15 +34,21 @@ class BooksApp extends React.Component {
   render() {
     return (
       <div className="app">
+    {/* Search Page components*/}
         <Route path='/search' render={() => (
           <SearchPage handleSelection={this.handleSelection}/>
           )}/>
+      {/* Root Page components*/}
         <Route exact path='/' render={() => (
           <div className="list-books">
             <div className="list-books-title">
               <h1>MyReads</h1>
             </div>
+
+          {/* BookShelf reveive as props all the books, a function to filter a book out from all the books, and a function to change book from shelf */}
             <BookShelf books={this.state.books} filterBook={this.filterBook} handleSelection={this.handleSelection}/>
+
+          {/* OpenSearch is the Link to the searchpage that is sticked to the homepage */}
             <OpenSearch/>
           </div>
         )}/>

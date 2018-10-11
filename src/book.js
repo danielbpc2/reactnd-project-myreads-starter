@@ -1,5 +1,6 @@
 import React from 'react';
 import ShelfChanger from './shelfchanger.js';
+import PropTypes from 'prop-types';
 
 const book = (props) => (
   <div className="book">
@@ -13,5 +14,10 @@ const book = (props) => (
     <div className="book-authors">{props.bookInfo['authors'] == null ? "Unknown Authors" : props.bookInfo['authors'].join(', ')}</div>
   </div>
   )
+
+book.propTypes = {
+  bookInfo: PropTypes.object.isRequired,
+  handleSelection: PropTypes.func.isRequired
+};
 
 export default book;
