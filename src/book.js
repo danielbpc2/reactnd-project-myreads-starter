@@ -11,7 +11,6 @@ const book = (props) => (
     <div className="book-title">{props.bookInfo['title']}</div>
 
     <div className="book-authors">{props.bookInfo['authors'] == null ? "Unknown Authors" : props.bookInfo['authors'].join(', ')}</div>
-
   </div>
   )
 

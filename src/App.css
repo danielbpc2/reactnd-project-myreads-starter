@@ -11,9 +11,13 @@ body, .app {
 /* main page */
 
 .list-books-title {
-  padding: 10px 0;
-  background: #2e7c31;
+  background-image: url('https://media.discordapp.net/attachments/337076678037864448/499958961827741696/books2.jpg');
+  height: 334px;
   text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.5);
 }
 .list-books-title h1 {
   font-weight: 400;
@@ -41,6 +45,7 @@ body, .app {
 }
 .bookshelf-books {
   text-align: center;
+  background-image: url('https://media.discordapp.net/attachments/337076678037864448/499956628695547904/Untitled-5.png');
 }
 
 .open-search {
@@ -121,7 +126,9 @@ body, .app {
 }
 
 .book {
-  width: 140px;
+  width: 129px;
+  background: rgba(255, 255, 255, 0.73);
+  border-radius: 5px;
 }
 .book-title,
 .book-authors {
@@ -131,7 +138,7 @@ body, .app {
   margin-top: 10px;
 }
 .book-authors {
-  color: #999;
+  color: #54793f;
 }
 
 .book-top {
@@ -143,7 +150,7 @@ body, .app {
 
 .book-shelf-changer {
   position: absolute;
-  right: 0;
+  right: -10px;
   bottom: -10px;
   width: 40px;
   height: 40px;
@@ -167,6 +174,7 @@ body, .app {
 .book-cover {
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   background: #eee;
+  background-size: cover;
 }
 .book-cover-title {
   padding: 20px 10px 0;

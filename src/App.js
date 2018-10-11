@@ -10,19 +10,12 @@ import * as BooksAPI from './BooksAPI'
 class BooksApp extends React.Component {
     state = {
       books: []
-      // currentlyReading: [],
-      // wantToRead: [],
-      // read: []
     }
 
   componentDidMount() {
     BooksAPI.getAll().then((data) => this.setState({
       books: data
-      // currentlyReading: data.filter(book => book['shelf'] === "currentlyReading"),
-      // wantToRead: data.filter(book => book['shelf'] === "wantToRead"),
-      // read: data.filter(book => book['shelf'] === "read")
     }))
-    // BooksAPI.getAll().then((data) => console.log(data))
   }
 
   filterBook(array, removeThisBook) {
