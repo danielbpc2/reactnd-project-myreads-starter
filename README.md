@@ -1,6 +1,6 @@
 # MyReads Project
 
-This was created using the starter template for the final assessment project for Udacity's React Fundamentals course.
+This was created using the starter template for the final assessment project for Udacity's React Fundamentals course, and Banner image and Shelf image found on google and editted by me.
 
 To get started developing right away:
 
