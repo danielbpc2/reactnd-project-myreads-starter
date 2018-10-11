@@ -26,6 +26,7 @@ To get started developing right away:
     │   ├── arrow-back.svg
     │   └── arrow-drop-down.svg
     ├── index.css # Global styles. You probably won't need to change anything here.
+<<<<<<< HEAD
     ├── index.js # You should not need to modify this file. It is used for DOM rendering only.
     ├── book.js
     ├── bookgrid.js
@@ -35,6 +36,17 @@ To get started developing right away:
     ├── searchpage.js
     ├── searchresult.js
     ├── shelf.js
+=======
+    └── index.js # You should not need to modify this file. It is used for DOM rendering only.
+    └── book.js
+    └── bookgrid.js
+    └── bookshelf.js
+    └── opensearch.js
+    └── searchbar.js
+    └── searchpage.js
+    └── searchresult.js
+    └── shelf.js
+>>>>>>> 0beead197153b248d6314dad85b422bb8f60a3fe
     └── shelfchanger.js
 ```
 
