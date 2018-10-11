@@ -126,11 +126,7 @@ body, .app {
 }
 
 .book {
-<<<<<<< HEAD
   width: 129px;
-=======
-  width: 140px;
->>>>>>> 570731774b636277dc439c4e61a4df1801a64f97
   background: rgba(255, 255, 255, 0.73);
   border-radius: 5px;
 }
