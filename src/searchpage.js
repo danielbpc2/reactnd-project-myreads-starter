@@ -25,10 +25,8 @@ class SearchPage extends React.Component {
   render() {
     return (
       <div className="search-books">
-
           <SearchBar onChangeOfQuery={this.onChangeOfQuery} query={this.state.query}/>
           <SearchResults booksFound={this.state.booksFound} handleSelection={this.props.handleSelection}/>
-
         </div>
     )
   }
