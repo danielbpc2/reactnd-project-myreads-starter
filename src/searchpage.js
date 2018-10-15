@@ -14,7 +14,7 @@ class SearchPage extends React.Component {
     this.setState({
       query: userInput
     })
-    if (userInput == null || userInput === '') {
+    if (userInput == null || userInput.trim() === '') {
       this.setState({booksFound: []})
     } else {
       BooksAPI.search(userInput)
