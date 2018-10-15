@@ -6,14 +6,10 @@ import PropTypes from 'prop-types';
 
 class SearchPage extends React.Component {
   state = {
-    query: '',
     booksFound: []
   }
 
   onChangeOfQuery = (userInput) => {
-    this.setState({
-      query: userInput
-    })
     if (userInput == null || userInput.trim() === '') {
       this.setState({booksFound: []})
     } else {
